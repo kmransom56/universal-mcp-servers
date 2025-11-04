@@ -1,0 +1,88 @@
+{
+  "mcpServers": {
+    "MCP_DOCKER": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-l",
+        "mcp.client=ai-platform",
+        "--rm",
+        "--add-host=host.docker.internal:host-gateway",
+        "-i",
+        "alpine/socat",
+        "STDIO",
+        "TCP:host.docker.internal:8811"
+      ]
+    },
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "$GITHUB_PERSONAL_ACCESS_TOKEN"
+      }
+    },
+    "API_DOG": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "apidog-mcp-server@latest",
+        "--project=950315"
+      ],
+      "env": {
+        "APIDOG_ACCESS_TOKEN": "$APIDOG_ACCESS_TOKEN"
+      }
+    },
+    "meraki": {
+      "command": "node",
+      "args": [
+        "/home/keith/meraki-mcp-server/meraki.js"
+      ],
+      "env": {
+        "MERAKI_API_KEY": "$MERAKI_API_KEY"
+      }
+    },
+    "fortimanager": {
+      "command": "python3",
+      "args": [
+        "/home/keith/chat-copilot/network-agents/fortimanager_mcp_server.py"
+      ],
+      "env": {
+        "FORTINET_API_KEY": "$FORTINET_API_KEY",
+        "FORTIMANAGER_HOST": "$FORTIMANAGER_HOST",
+        "FORTIMANAGER_USERNAME": "$FORTIMANAGER_USERNAME",
+        "FORTIMANAGER_PASSWORD": "$FORTIMANAGER_PASSWORD"
+      }
+    },
+    "Figma-y8orn7": {
+      "url": "https://mcp.composio.dev/composio/server/83664951-9d36-4818-90cc-a7e9060ddab1/mcp?include_composio_helper_actions=true&agent=ai-platform"
+    }
+  },
+  "security": {
+    "use_github_secrets": true,
+    "fallback_to_env": true,
+    "credential_sources": [
+      "github_secrets",
+      "environment_variables"
+    ]
+  },
+  "integration_features": {
+    "ai_collaboration": true,
+    "restaurant_networks": true,
+    "code_management": true,
+    "container_operations": true,
+    "api_testing": true,
+    "design_operations": true
+  },
+  "restaurant_network_config": {
+    "supported_brands": [
+      "arbys",
+      "buffalo_wild_wings", 
+      "sonic"
+    ],
+    "device_count_estimate": "25000+",
+    "fortimanager_instances": {
+      "arbys": "10.128.144.132",
+      "buffalo_wild_wings": "10.128.145.4", 
+      "sonic": "10.128.156.36"
+    }
+  }
+}

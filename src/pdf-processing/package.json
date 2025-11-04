@@ -1,0 +1,10 @@
+{
+  "name": "pdf-processing-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pdfkit": "^0.13.0",
+    "pdf-table-extractor": "^1.0.3"
+  }
+} 

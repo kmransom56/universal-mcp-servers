@@ -1,0 +1,56 @@
+{
+  "name": "universal-mcp-servers",
+  "version": "1.0.0",
+  "description": "Comprehensive collection of 40+ MCP servers for all AI tools (Cursor, VS Code, Claude Desktop, Copilot CLI, Gemini CLI)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:all",
+    "build:all": "cd src && find . -name 'package.json' -execdir npm run build \\; 2>/dev/null || true",
+    "install:all": "./universal-mcp-installer.sh install-all",
+    "test": "./universal-mcp-installer.sh test",
+    "status": "./universal-mcp-installer.sh status",
+    "generate-configs": "python3 mcp-config-generator.py"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-tools",
+    "cursor",
+    "vscode",
+    "claude",
+    "copilot",
+    "gemini",
+    "ai-integration",
+    "development-tools",
+    "automation",
+    "file-processing",
+    "media-processing",
+    "network-management",
+    "fortinet",
+    "meraki",
+    "openai",
+    "git-integration"
+  ],
+  "author": "Keith Ransom <keith@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kmransom56/universal-mcp-servers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kmransom56/universal-mcp-servers/issues"
+  },
+  "homepage": "https://github.com/kmransom56/universal-mcp-servers#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.8"
+  },
+  "dependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/jest": "^29.0.0",
+    "jest": "^29.0.0"
+  }
+}

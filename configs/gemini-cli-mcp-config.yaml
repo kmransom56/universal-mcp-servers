@@ -1,0 +1,84 @@
+mcp:
+  servers:
+    memory:
+      command: node
+      args: 
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/memory/dist/index.js
+      env:
+        MEMORY_FILE_PATH: /home/keith/chat-copilot/data/mcp-memory.json
+    
+    filesystem:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/filesystem/dist/index.js
+      env:
+        ALLOWED_DIRECTORIES: /home/keith/chat-copilot,/home/keith
+    
+    git:
+      command: python3
+      args:
+        - -m
+        - mcp_server_git
+        - stdio
+      cwd: /home/keith/chat-copilot/mcp-servers-consolidated/src/git
+    
+    ai-platform-gateway:
+      command: python3
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/ai-mcp-platform/mcp_server.py
+        - stdio
+      env:
+        PLATFORM_IP: localhost
+        MCP_SERVER_NAME: AI Platform Gateway
+    
+    fetch:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/fetch/index.js
+    
+    openai:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/openai/index.js
+      env:
+        OPENAI_API_KEY: ${OPENAI_API_KEY}
+    
+    sequential-thinking:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/sequential-thinking/index.js
+    
+    everything:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/everything/dist/index.js
+    
+    pdf-processing:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/pdf-processing/index.js
+    
+    image-processing:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/image-processing/index.js
+    
+    spreadsheet-processing:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/spreadsheet-processing/index.js
+    
+    text-processing:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/text-processing/index.js
+    
+    video-processing:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/video-processing/index.js
+    
+    audio-processing:
+      command: node
+      args:
+        - /home/keith/chat-copilot/mcp-servers-consolidated/src/audio-processing/index.js

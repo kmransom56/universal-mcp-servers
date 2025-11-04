@@ -1,0 +1,521 @@
+{
+  "mcp_servers": {
+    "time": {
+      "name": "time",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/time",
+      "type": "python",
+      "executable": "-m mcp_server_time",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "description": "A Model Context Protocol server that provides time and timezone conversion capabilities. This server",
+      "working": true
+    },
+    "git": {
+      "name": "git",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/git",
+      "type": "python",
+      "executable": "-m mcp_server_git",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "description": "A Model Context Protocol server for Git repository interaction and automation. This server provides ",
+      "working": true
+    },
+    "memory": {
+      "name": "memory",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/memory",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/memory/dist/index.js",
+      "args": [],
+      "env": {},
+      "description": "---",
+      "working": true
+    },
+    "sentry": {
+      "name": "sentry",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/sentry",
+      "type": "python",
+      "executable": "-m mcp_server_sentry",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "description": "A Model Context Protocol server for retrieving and analyzing issues from Sentry.io. This server prov",
+      "working": true
+    },
+    "meraki": {
+      "name": "meraki",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/meraki",
+      "type": "python",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/meraki/server.py",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "description": "---",
+      "working": true
+    },
+    "spreadsheet-processing": {
+      "name": "spreadsheet-processing",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/spreadsheet-processing",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/spreadsheet-processing/index.js",
+      "args": [],
+      "env": {},
+      "description": "",
+      "working": true
+    },
+    "pdf-processing": {
+      "name": "pdf-processing",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/pdf-processing",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/pdf-processing/index.js",
+      "args": [],
+      "env": {},
+      "description": "",
+      "working": true
+    },
+    "fortimanager": {
+      "name": "fortimanager",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortimanager",
+      "type": "python",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortimanager/server.py",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "description": "---",
+      "working": true
+    },
+    "gdrive": {
+      "name": "gdrive",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/gdrive",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/gdrive/index.js",
+      "args": [],
+      "env": {},
+      "description": "",
+      "working": true
+    },
+    "everything": {
+      "name": "everything",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/everything",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/everything/dist/index.js",
+      "args": [],
+      "env": {},
+      "description": "---",
+      "working": true
+    },
+    "filesystem": {
+      "name": "filesystem",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/filesystem",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/filesystem/dist/index.js",
+      "args": [],
+      "env": {},
+      "description": "---",
+      "working": true
+    },
+    "sequentialthinking": {
+      "name": "sequentialthinking",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/sequentialthinking",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/sequentialthinking/dist/index.js",
+      "args": [],
+      "env": {},
+      "description": "---",
+      "working": true
+    },
+    "fetch": {
+      "name": "fetch",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/fetch",
+      "type": "nodejs",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/fetch/index.js",
+      "args": [],
+      "env": {},
+      "description": "A Model Context Protocol server that provides web content fetching capabilities. This server enables",
+      "working": true
+    },
+    "fortinet": {
+      "name": "fortinet",
+      "path": "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortinet",
+      "type": "python",
+      "executable": "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortinet/server.py",
+      "args": [
+        "stdio"
+      ],
+      "env": {},
+      "description": "---",
+      "working": true
+    }
+  },
+  "configurations": {
+    "cursor": {
+      "mcpServers": {
+        "time": {
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_time",
+            "stdio"
+          ],
+          "cwd": "/home/keith/chat-copilot/mcp-servers-consolidated/src/time"
+        },
+        "git": {
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_git",
+            "stdio"
+          ],
+          "cwd": "/home/keith/chat-copilot/mcp-servers-consolidated/src/git"
+        },
+        "memory": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/memory/dist/index.js"
+          ],
+          "env": {
+            "MEMORY_FILE_PATH": "/home/keith/chat-copilot/data/mcp-memory.json"
+          }
+        },
+        "sentry": {
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_sentry",
+            "stdio"
+          ],
+          "cwd": "/home/keith/chat-copilot/mcp-servers-consolidated/src/sentry",
+          "env": {
+            "SENTRY_DSN": "your-sentry-dsn"
+          }
+        },
+        "meraki": {
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/meraki/server.py",
+            "stdio"
+          ],
+          "env": {
+            "MERAKI_API_KEY": "your-meraki-api-key"
+          }
+        },
+        "spreadsheet-processing": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/spreadsheet-processing/index.js"
+          ]
+        },
+        "pdf-processing": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/pdf-processing/index.js"
+          ]
+        },
+        "fortimanager": {
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortimanager/server.py",
+            "stdio"
+          ],
+          "env": {
+            "FORTINET_API_BASE": "https://your-fortigate-ip",
+            "FORTINET_API_KEY": "your-api-key"
+          }
+        },
+        "gdrive": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/gdrive/index.js"
+          ],
+          "env": {
+            "GDRIVE_TOKEN": "your-gdrive-token"
+          }
+        },
+        "everything": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/everything/dist/index.js"
+          ]
+        },
+        "filesystem": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/filesystem/dist/index.js"
+          ],
+          "env": {
+            "ALLOWED_DIRECTORIES": "/home/keith/chat-copilot,/home/keith"
+          }
+        },
+        "sequentialthinking": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/sequentialthinking/dist/index.js"
+          ]
+        },
+        "fetch": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fetch/index.js"
+          ]
+        },
+        "fortinet": {
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortinet/server.py",
+            "stdio"
+          ],
+          "env": {
+            "FORTINET_API_BASE": "https://your-fortigate-ip",
+            "FORTINET_API_KEY": "your-api-key"
+          }
+        }
+      }
+    },
+    "vscode": {
+      "mcp.servers": [
+        {
+          "id": "time",
+          "name": "Time",
+          "description": "A Model Context Protocol server that provides time and timezone conversion capabilities. This server",
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_time"
+          ],
+          "cwd": "/home/keith/chat-copilot/mcp-servers-consolidated/src/time"
+        },
+        {
+          "id": "git",
+          "name": "Git",
+          "description": "A Model Context Protocol server for Git repository interaction and automation. This server provides ",
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_git"
+          ],
+          "cwd": "/home/keith/chat-copilot/mcp-servers-consolidated/src/git"
+        },
+        {
+          "id": "memory",
+          "name": "Memory",
+          "description": "---",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/memory/dist/index.js"
+          ],
+          "env": {
+            "MEMORY_FILE_PATH": "/home/keith/chat-copilot/data/mcp-memory.json"
+          }
+        },
+        {
+          "id": "sentry",
+          "name": "Sentry",
+          "description": "A Model Context Protocol server for retrieving and analyzing issues from Sentry.io. This server prov",
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_sentry"
+          ],
+          "cwd": "/home/keith/chat-copilot/mcp-servers-consolidated/src/sentry"
+        },
+        {
+          "id": "meraki",
+          "name": "Meraki",
+          "description": "---",
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/meraki/server.py"
+          ]
+        },
+        {
+          "id": "spreadsheet-processing",
+          "name": "Spreadsheet Processing",
+          "description": "",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/spreadsheet-processing/index.js"
+          ]
+        },
+        {
+          "id": "pdf-processing",
+          "name": "Pdf Processing",
+          "description": "",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/pdf-processing/index.js"
+          ]
+        },
+        {
+          "id": "fortimanager",
+          "name": "Fortimanager",
+          "description": "---",
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortimanager/server.py"
+          ]
+        },
+        {
+          "id": "gdrive",
+          "name": "Gdrive",
+          "description": "",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/gdrive/index.js"
+          ]
+        },
+        {
+          "id": "everything",
+          "name": "Everything",
+          "description": "---",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/everything/dist/index.js"
+          ]
+        },
+        {
+          "id": "filesystem",
+          "name": "Filesystem",
+          "description": "---",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/filesystem/dist/index.js"
+          ],
+          "env": {
+            "ALLOWED_DIRECTORIES": "/home/keith/chat-copilot,/home/keith"
+          }
+        },
+        {
+          "id": "sequentialthinking",
+          "name": "Sequentialthinking",
+          "description": "---",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/sequentialthinking/dist/index.js"
+          ]
+        },
+        {
+          "id": "fetch",
+          "name": "Fetch",
+          "description": "A Model Context Protocol server that provides web content fetching capabilities. This server enables",
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fetch/index.js"
+          ]
+        },
+        {
+          "id": "fortinet",
+          "name": "Fortinet",
+          "description": "---",
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortinet/server.py"
+          ]
+        }
+      ]
+    },
+    "claude_desktop": {
+      "globalShortcut": "CommandOrControl+;",
+      "mcpServers": {
+        "time": {
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_time"
+          ]
+        },
+        "git": {
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_git"
+          ]
+        },
+        "memory": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/memory/dist/index.js"
+          ],
+          "env": {
+            "MEMORY_FILE_PATH": "/home/keith/chat-copilot/data/mcp-memory.json"
+          }
+        },
+        "sentry": {
+          "command": "python3",
+          "args": [
+            "-m",
+            "mcp_server_sentry"
+          ]
+        },
+        "meraki": {
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/meraki/server.py"
+          ]
+        },
+        "spreadsheet-processing": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/spreadsheet-processing/index.js"
+          ]
+        },
+        "pdf-processing": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/pdf-processing/index.js"
+          ]
+        },
+        "fortimanager": {
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortimanager/server.py"
+          ]
+        },
+        "gdrive": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/gdrive/index.js"
+          ]
+        },
+        "everything": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/everything/dist/index.js"
+          ]
+        },
+        "filesystem": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/filesystem/dist/index.js"
+          ],
+          "env": {
+            "ALLOWED_DIRECTORIES": "/home/keith/chat-copilot,/home/keith"
+          }
+        },
+        "sequentialthinking": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/sequentialthinking/dist/index.js"
+          ]
+        },
+        "fetch": {
+          "command": "node",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fetch/index.js"
+          ]
+        },
+        "fortinet": {
+          "command": "python3",
+          "args": [
+            "/home/keith/chat-copilot/mcp-servers-consolidated/src/fortinet/server.py"
+          ]
+        }
+      }
+    }
+  }
+}
