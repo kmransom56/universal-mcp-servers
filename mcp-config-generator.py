@@ -396,3 +396,7 @@ echo "  - ~/.config/claude-desktop/claude_desktop_config.json"
 if __name__ == "__main__":
     generator = MCPConfigGenerator()
     servers = generator.generate_all_configs()
+
+
+
+

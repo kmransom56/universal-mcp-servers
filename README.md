@@ -1,3 +1,11 @@
+---
+title: "README"
+date: "2025-11-04"
+tags: [chat-copilot, auto-tagged]
+source: auto-import
+status: imported
+---
+
 # 🚀 Universal MCP Servers Collection
 
 > **Comprehensive collection of 40+ Model Context Protocol (MCP) servers for all major AI development tools**

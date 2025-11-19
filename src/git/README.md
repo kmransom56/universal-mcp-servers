@@ -1,3 +1,11 @@
+---
+title: "README"
+date: "2025-11-04"
+tags: [chat-copilot, auto-tagged]
+source: auto-import
+status: imported
+---
+
 # mcp-server-git: A git MCP server
 
 ## Overview

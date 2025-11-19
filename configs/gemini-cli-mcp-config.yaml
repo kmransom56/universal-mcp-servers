@@ -82,3 +82,7 @@ mcp:
       command: node
       args:
         - /home/keith/chat-copilot/mcp-servers-consolidated/src/audio-processing/index.js
+
+
+
+

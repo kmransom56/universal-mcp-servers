@@ -1,3 +1,11 @@
+---
+title: "README"
+date: "2025-11-04"
+tags: [chat-copilot, auto-tagged]
+source: auto-import
+status: imported
+---
+
 # MCP TypeScript SDK ![NPM Version](https://img.shields.io/npm/v/%40modelcontextprotocol%2Fsdk) ![MIT licensed](https://img.shields.io/npm/l/%40modelcontextprotocol%2Fsdk)
 
 ## Table of Contents

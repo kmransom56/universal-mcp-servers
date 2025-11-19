@@ -1,3 +1,11 @@
+---
+title: "README"
+date: "2025-11-04"
+tags: [chat-copilot, auto-tagged]
+source: auto-import
+status: imported
+---
+
 # Fetch MCP Server
 
 A Model Context Protocol server that provides web content fetching capabilities. This server enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.
